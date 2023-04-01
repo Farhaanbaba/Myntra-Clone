@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/1836221a08.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="">
+
+    <link rel="stylesheet" href="style.css">
+
+   <link rel="icon" href="./img/favicon.png" type="image/png" class="fav-img" >
+
+    <title>Myntra online shopping</title>
+</head>
+<body>
+    
+            <!-- navbar -->
+
+<section id="navbar">
+    <div class="container-fluid">
+        <nav class="navbar shadow navbar-expand-lg navbar-light fixed-top">
+            <img  class="navbar-brand ms-5" src="./img/logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                  <div class="collapse navbar-collapse ms-5 " id="mynav">
+                      <ul class="navbar-nav ">
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" href="#" id="navbarDropdown" role="button">MEN</a>
+                              <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                  <li><a   class="dropdown-item"   href="">Shoes</a></li>
+                                  <li><a   class="dropdown-item" href="">Casual t-shirts</a></li>
+                                  <li><a   class="dropdown-item"    href="">Waist Coat</a></li>
+                                  <li><a   class="dropdown-item"   href="">Casual Shirts</a></li>
+                                  <li><a   class="dropdown-item" href="">Track Suits</a></li>
+                                  <li><a   class="dropdown-item"    href="">Formal T-shirts</a></li>
+                                  <li><a   class="dropdown-item"   href="">Rain Jackets</a></li>
+                                  <li><a   class="dropdown-item" href="">Suits</a></li>
+                                  <li><a   class="dropdown-item"    href="">Blazzer And Coats</a></li>
+                                  
+                              </ul> 
+                           </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="" id="navbardropdown" role="button">WOMEN</a>
+                              <ul class="dropdown-menu" aria-labelledby="navbardropdown">
+                                <li><a class="dropdown-item"  href="">Lehanga</a></li>
+                                <li><a class="dropdown-item"  href="">Saree</a></li>
+                                <li><a class="dropdown-item"  href="">Kurtas</a></li>
+                                <li><a class="dropdown-item"  href="">Make up Items</a></li>
+                                <li><a class="dropdown-item"  href="">Shoes</a></li>
+                                <li><a class="dropdown-item"  href="">New arrival</a></li>
+                                <li><a class="dropdown-item"  href="">Modern Dresses</a></li>
+                                <li><a class="dropdown-item"  href="">Shawls</a></li>
+                                <li><a class="dropdown-item"  href="">Hand Bags</a></li>
+                                
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="" id="navbardropdown" role="button">KIDS</a>
+                              <ul class="dropdown-menu" aria-labelledby="navbardropdown">
+                                <li><a class="dropdown-item"  href="">Kids Jeans</a></li>
+                                <li><a class="dropdown-item"  href="">Shoes</a></li>
+                                <li><a class="dropdown-item"  href="">Ethenic Wear</a></li>
+                                <li><a class="dropdown-item"  href="">Track Pants</a></li>
+                                <li><a class="dropdown-item"  href="">Pajama</a></li>
+                                <li><a class="dropdown-item"  href="">Jeans</a></li>
+                                <li><a class="dropdown-item"  href="">T-shirts</a></li>
+                                <li><a class="dropdown-item"  href="">Sleep Wear</a></li>
+                                <li><a class="dropdown-item"  href="">Backpacks</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="navbardropdown" role="button">OFFERS</a>
+                              <ul class="dropdown-menu" aria-labelledby="navbardropdown">
+                                <li><a class="dropdown-item" href="">Nike</a></li>
+                                <li><a class="dropdown-item" href="">Addidas</a></li>
+                                <li><a class="dropdown-item" href="">Puma</a></li>
+                                <li><a class="dropdown-item" href="">Quechua</a></li>
+                                <li><a class="dropdown-item" href="">Roadester</a></li>
+                                <li><a class="dropdown-item" href="">Woodland</a></li>
+                                <li><a class="dropdown-item" href="">Levis</a></li>
+                                <li><a class="dropdown-item" href="">Monte Carlo</a></li>
+                  
+                              </ul>
+
+                          </li>
+                      </ul>
+
+                      <form class="ms-auto">
+                           <input type="text"  class="search-bar border-0 me-5 text-center" style="width: 25rem; background-color:  rgba(128, 128, 128, 0.11);" placeholder="Search items here" >
+                        
+                          <a href="" class="btn  cart-btn   me-4">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            Cart
+                          </a>
+                          <a  class="btn prof-btn  me-5" data-bs-toggle="modal" data-bs-target="#Account"  >
+                            <i class="fa fa-user"></i>
+                              Profile
+                          </a>
+                          <a href="" class="btn btn-sm btn-light btn-outline-success me-5" data-bs-toggle="modal" data-bs-target="#LogIn">Login</a>
+                      </form> 
+                   </div>
+        </nav>
+    </div>
+</section>
+
+
+
+                     
+                             <!-- MODAL (PROFILE BUTTON ) -->
+  <section id="prof-modal">
+    <div  class="modal fade" id="Account">
+        <div class="modal-dialog modal-dialog-centered modal">
+               <div class="modal-content">
+                     <div class="modal-header border-0 " style="background-color: rgba(0, 0, 0, 0.699);">
+                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                     </div>
+                     <div class="modal-body">
+                          <form action="">
+                            <div class="text-center">           
+                                <img src="./img/card2.jpg" alt="" class="profimg rounded-circle text-center" style="width: 8rem; height: 11rem;"> <br>
+                            </div> 
+                            <div class="mt-4">
+                                 <a href=""><i class="fa fa-user"></i> &nbsp;&nbsp; Username: Suhail Qadri</a>  <br>
+                                 <a href=""><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp; Email Id : Suhailqadri1234@gmail.com</a><br>
+                                 <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; &nbsp; Address:Lal Chowk </a> <br>
+                                 <a href=""><i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp;&nbsp; Phone Number: 2717-33-8686</a>  <br>
+                                 <a href=""><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp; Setting</a>  
+                            </div>
+                          </form>
+                     </div>
+                     <div class="modal-footer">
+                           <button class="btn btn-sm btn-primary me-2" data-bs-dismiss="modal">Close</button>        
+                     </div>
+               </div>
+        </div>
+    </div>
+  </section>                           
+
+
+
+
+
+
+                           <!-- #MODAL-box {login Button} -->
+<section id="Modal-box">
+   <div class="modal fade" id="LogIn">
+    <div class="modal-dialog modal-dialog-centered modal">
+      <div class="modal-content">
+        <div class="modal-header border-0 bg-success text-white text-center">
+          <h5 class="modal-title ms-auto" id="logInLabel">Make An Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form class="form-group">
+            
+            <label for="" class="">Name</label>
+            <input type="text" class=" form-control mb-2" placeholder="Enter Username">
+            
+            <label for="" class="">Password</label>
+            <input type="password" class="form-control mb-2" placeholder="Make a Password">
+
+            <label for="" class="">Phone Number</label>
+            <input type="tel" class="form-control mb-2" placeholder="Enter  Your Phone-number">
+             
+            <label for="" class="">Enter Email</label>
+            <input type="text" class="form-control mb-2" placeholder="Enter Your Email">
+
+            <label for="" class="">Address</label>
+            <input type="text" class="form-control mb-2" placeholder="Enter Your Address">
+
+            <input type="checkbox" class="">
+            <label for="">Remember Me!</label>
+          </form>
+        </div>
+        <div class="modal-footer">
+                     <button class="btn btn-sm btn-success me-2" data-bs-dismiss="modal">Close</button>
+                     <button class="btn btn-sm btn-success">Make Account!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+                <!-- carousel1 -->
+
+<section id="carousel1">
+    <div class="container-fluid">
+        <div id="carouselExampleSlidesOnly" class="carousel slide shadow mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/carousel1.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel2.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel3.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel5.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel6.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+                    <!-- card1  -->
+
+<section id="card1">
+         <div class="text-center">
+               <h2>TRENDING IN WESTERN WEAR FOR MEN</h2>
+          </div>
+    <div class="container">
+        <div class="row mx-auto mb-5 mt-4">
+            <div class="col-md-2 ">
+                <div class="card p-0 shadow"  style="width: 12rem;">
+                    <img src="./img/card1.jpg" class="card-img-top" style="width: 100%; height: 280px;" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Formal wear</h5>
+                      <p class="card-text"> 70% OFF</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card shadow" style="width: 12rem;">
+                    <img src="./img/card2.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Casual wear</h5>
+                      <p class="card-text">20-30% OFF</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card shadow" style="width: 12rem;">
+                    <img src="./img/card3.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Party wear</h5>
+                      <p class="card-text">25% OFF</p>
+                    </div>
+                  </div>
+            </div>
+           
+            <div class="col-md-2">
+                <div class="card shadow" style="width: 12rem;">
+                    <img src="./img/card4.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sports wear</h5>
+                      <p class="card-text">50%-60% OFF</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-2"> 
+                <div class="card shadow" style="width: 12rem;">
+                    <img src="./img/card5.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Office wear</h5>
+                      <p class="card-text">10% OFF</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card shadow" style="width: 12rem;">
+                    <img src="./img/card6.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">New Arrival</h5>
+                      <p class="card-text">30%-40% OFF</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+                   <!-- card2  -->
+
+<section id="card2">
+         <div class="text-center">
+             <h2>TRENDING IN WESTERN WEAR FOR WOMEN</h2>
+         </div>
+         
+         <div class="container">
+            <div class="row mx-auto mb-5 mt-4">
+                <div class="col-md-2 ">
+                    <div class="card p-0 shadow"  style="width: 12rem;">
+                        <img src="./img/card7.jpg" class="card-img-top" style="width: 100%; height: 280px;" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lehanga wear</h5>
+                          <p class="card-text">60%-70% OFF</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow" style="width: 12rem;">
+                        <img src="./img/card8.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Casual wear</h5>
+                          <p class="card-text">20-30% OFF</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow" style="width: 12rem;">
+                        <img src="./img/card9.jpg" class="card-img-top" style="width: 100%;  height:280px;" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Wedding special</h5>
+                          <p class="card-text text-center">30% OFF</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow" style="width: 12rem;">
+                        <img src="./img/card10.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sports wear</h5>
+                          <p class="card-text">50% OFF</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-2"> 
+                    <div class="card shadow" style="width: 12rem;">
+                        <img src="./img/card11.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Party wear</h5>
+                          <p class="card-text">50% OFF</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow" style="width: 12rem;">
+                        <img src="./img/card12.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Saree wear</h5>
+                          <p class="card-text">Buy 1 get 1 free</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+
+                       <!-- card3  -->
+
+  <section id="card3">
+            <div class="text-center">
+                <h2>TRENDING IN FOR KIDS</h2>
+            </div>
+
+            <div class="container">
+                <div class="row mx-auto mb-5 mt-4">
+                    <div class="col-md-2 ">
+                        <div class="card p-0 shadow"  style="width: 12rem;">
+                            <img src="./img/card13.jpg" class="card-img-top" style="width: 100%; height: 280px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Kurti wear</h5>
+                              <p class="card-text">Buy 1 get 2</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card shadow" style="width: 12rem;">
+                            <img src="./img/card14.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dhoti wear</h5>
+                              <p class="card-text">Starting from $40</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card shadow" style="width: 12rem;">
+                            <img src="./img/card15.jpg" class="card-img-top" style="width: 100%;  height:280px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Toys for all</h5>
+                              <p class="card-text text-center">30% OFF</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card shadow" style="width: 12rem;">
+                            <img src="./img/card16.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Frocks wear</h5>
+                              <p class="card-text">20% OFF</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-2"> 
+                        <div class="card shadow" style="width: 12rem;">
+                            <img src="./img/card17.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">New arrivals</h5>
+                              <p class="card-text">Starting from $20</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card shadow" style="width: 12rem;">
+                            <img src="./img/card18.jpg" class="card-img-top" style="width: 100%;  height: 280px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Shoe wear</h5>
+                              <p class="card-text">At lowest prices</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+         
+  </section>
+
+
+
+            
+                   <!-- carousel2  -->
+       
+    <section id="carousel2">
+      <div class="container">
+           <div class="row mb-5">
+                  <div id="carousel2-a" class="col-md-6">
+                     <div id="carouselExampleSlidesOnly" class="carousel slide shadow " data-bs-ride="carousel" style="height: 300px;">
+                        <div class="carousel-inner">
+                             <div class="carousel-item active" style="height: 300px;" >
+                               <img src="./img/carousel7.gif" class="d-block w-100 h-100" alt="...">
+                             </div>
+                             <div class="carousel-item" style="height: 300px;">
+                               <img src="./img/carousel8.webp" class="d-block w-100 h-100" alt="...">
+                             </div>
+                             <div class="carousel-item"   style="height: 300px;">
+                               <img src="./img/carousel9.webp" class="d-block w-100 h-100" alt="...">
+                             </div>
+                        </div>     
+                     </div>
+                  </div>
+
+
+                  <div  id="carousel2-b" class="col-md-6 ">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide shadow " data-bs-ride="carousel" style="height: 300px;">
+                      <div class="carousel-inner">
+                           <div class="carousel-item active" style="height: 300px;">
+                             <img src="./img/carousel10.webp" class="d-block w-100 h-100" alt="...">
+                           </div>
+                           <div class="carousel-item"  style="height: 300px;">
+                             <img src="./img/carousel11.webp" class="d-block w-100 h-100" alt="...">
+                           </div>
+                           <div class="carousel-item" style="height: 300px;"  >
+        
+                             <img src="./img/carousel12.webp" class="d-block w-100 h-100" alt="...">
+                           </div>
+                      </div>     
+                   </div>
+                  </div>
+           </div>
+      </div>
+    </section>
+
+
+ 
+
+                        
+                     <!-- info div  -->
+
+    <section id="info-div">
+          <div class="container" style="background-color: #f3f3f3;">
+                   
+              <div class="row text-center p-5 mt-4"> 
+                       <div class="col-md-3 mx-auto">
+                           <span class="fa fa-car fa-4x"></span> 
+                           <h3>Quick Delivery</h3>
+                           <p> 
+                              Delivery  of items as Soon as Possible
+                           </p>
+                       </div>
+
+                       <div class="col-md-3 mx-auto">
+                           <span class="fa fa-shopping-cart fa-w-16 fa-4x"></span> 
+                           <h3>Your Cart</h3>
+                           <p>   
+                                Add all your Favourites to the Cart
+                           </p>
+                       </div>
+
+                       <div class="col-md-3 mx-auto">
+                           <span class="fa fa-user fa-w-14 fa-4x"></span> 
+                           <h3>Profile</h3>
+                           <p> 
+                               Login now To Gain Special Offers
+                           </p>
+                       </div>
+                </div>
+          </div>
+    </section>
+
+
+
+                       <!-- card4  -->
+
+   <section id="card4">
+            <div class=" text-center">
+                <h2>AVAILABLE IN ACCESSORIES</h2>
+            </div>
+         <div class="container-fluid">
+               <div class="row mt-3">
+                     <div class="col-md-2 mx-auto">
+                        <div class="card p-0 shadow"  style="width: 16rem;">
+                                <img src="./img/wireless headphone.jpg" class="card-img-top" style="width: 100%; height: 240px;" alt="...">
+                             <div class="card-body text-center">
+                                <h5 class="card-title">Wireless Headphones</h5>
+                                <p class="card-text">Tangled wires? Not in our Vocabulary</p>
+                             </div>
+                        </div>
+                     </div>
+                     <div class="col-md-2 mx-auto">
+                      <div class="card p-0 shadow"  style="width: 16rem;">
+                              <img src="./img/watches.jpg" class="card-img-top" style="width: 100%; height: 240px;" alt="...">
+                           <div class="card-body text-center">
+                              <h5 class="card-title">Branded Watches</h5>
+                              <p class="card-text">A Classic in Every Sense Of Word</p>
+                           </div>
+                      </div>
+                   </div>
+                   <div class="col-md-2 mx-auto">
+                    <div class="card p-0 shadow"  style="width: 16rem;">
+                            <img src="./img/jewellery.jpg" class="card-img-top" style="width: 100%; height: 240px;" alt="...">
+                         <div class="card-body text-center">
+                            <h5 class="card-title">Handcrafted jewellery</h5>
+                            <p class="card-text">A Personal Touch To Every Piece!</p>
+                         </div>
+                    </div>
+                 </div>
+                 <div class="col-md-2 mx-auto">
+                  <div class="card p-0 shadow"  style="width: 16rem;">
+                          <img src="./img/mobile accessories.png" class="card-img-top" style="width: 100%; height: 240px;" alt="...">
+                       <div class="card-body text-center">
+                          <h5 class="card-title">Mobile Accessories</h5>
+                          <p class="card-text">Every Single Piece Is Unique In Brand</p>
+                       </div>
+                  </div>
+               </div>
+               <div class="col-md-2 mx-auto">
+                <div class="card p-0 shadow"  style="width: 16rem;">
+                        <img src="./img/kitchen.jpg" class="card-img-top" style="width: 100%; height: 240px;" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title">Kitchen Special</h5>
+                        <p class="card-text">All The Thing Out Here Are Full Off Kitchen Aroma</p>
+                     </div>
+                </div>
+             </div>
+               </div>
+
+
+
+                    
+                  <div class="row mt-4">
+                         <div class="col-md-2 mx-auto">
+                             <div class="card p-0 shadow"  style="width: 16rem;">
+                                      <img src="./img/furniture.jpg" class="card-img-top" style="width: 100%; height: 240px;" alt="...">
+                                 <div class="card-body text-center">
+                                      <h5 class="card-title">Household Furniture</h5>
+                                      <p class="card-text">Beautify And Flourish your Houses Out There</p>
+                                 </div>
+                             </div>
+                        </div>
+
+                        <div class="col-md-2 mx-auto">
+                              <div class="card p-0 shadow"  style="width: 16rem;">
+                                     <img src="./img/mobile phones.jpg" class="card-img-top" style="width: 100%; height: 240px;" alt="...">
+                                  <div class="card-body text-center">
+                                     <h5 class="card-title">Branded Mobiles</h5>
+                                     <p class="card-text">Tangled? Dont Wory We Are Here For You</p>
+                                  </div>
+                              </div>
+                        </div>
+
+                        <div class="col-md-2 mx-auto">
+                            <div class="card p-0 shadow"  style="width: 16rem;">
+                                    <img src="./img/disposal items.jpg" class="card-img-top" style="width: 100%; height: 240px;" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Disposal Items</h5>
+                                    <p class="card-text">Planning For A Wedding? Grab The Items Now </p>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col-md-2 mx-auto">
+                            <div class="card p-0 shadow"  style="width: 16rem;">
+                                     <img src="./img/stationary.jpg" class="card-img-top" style="width: 100%; height: 240px;" alt="...">
+                                <div class="card-body text-center">
+                                     <h5 class="card-title">Stationary Items</h5>
+                                     <p class="card-text">All Valauble And Best Stationary for kids</p>
+                                </div>
+                            </div>
+                        </div>
+
+                          
+                        <div class="col-md-2 mx-auto">
+                            <div class="card p-0 shadow"  style="width: 16rem;">
+                                      <img src="./img/gaming items.jpg" class="card-img-top" style="width: 100%; height: 240px;" alt="...">
+                                 <div class="card-body text-center">
+                                      <h5 class="card-title">Gaming Gadgets</h5>
+                                      <p class="card-text">All In One For The Young And For The Old!</p>
+                                 </div>
+                            </div>
+                      </div>
+                 </div>
+           
+   </section>
+
+
+
+
+                         <!-- footer  -->
+
+ <section   id="footer">
+         <div class="footer">
+                <div class="footer-content">
+                            <div class="footer-section ms-5 mt-4">
+                                  <h2 class="footer-logo">Contact us</h2>
+                                  <p class="footer-para">Join Our Journey Now, To Explore True Beauty.</p>
+                                      <div class="contact">
+                                        <span class="icons"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;                 Farhaan12345@gmail.com</span>  <br>
+                                          <span class="icons"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                                            &nbsp; 243-23-2389
+                                          </span>
+                                          <span></span>
+                                      </div>
+                                      <div class="social">
+                                               <span class="icons"><i class="fa fa-facebook-official" aria-hidden="true"></i></span>
+                                               <span class="icons"><i class="fa fa-instagram" aria-hidden="true"></i> 
+                                               </span>
+                                               <span class="icons"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                               <span class="icons"><i class="fa fa-youtube" aria-hidden="true"></i></span>
+                                                
+                                      </div>
+                            </div>
+                            <div class="footer-section mt-4">
+                                      <h2>Quick Links</h2>
+                                      <div   class="links">
+                                             <span><a href="">Explore</a></span> <br>
+                                             <span><a href="">Mentores</a></span> <br>
+                                             <span><a href="">Gallery</a></span> <br>
+                                             <span><a href="">About Us</a></span> <br>
+                                             <span><a href="">Terms and Conditions</a></span>
+                                      </div>    
+                            </div>
+                            
+                </div>
+
+               <div class="footer-bottom">
+                     &copy; CodingNinga.com / Designed By Farhaan baba / @ copyright 2021
+               </div>
+         </div>
+ </section>                        
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
